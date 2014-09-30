@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><addon id="plugin.video.nineau-catchup" name="NineAU catch-up" provider-name="grantbeattie" version="1.0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension library="addon.py" point="xbmc.python.pluginsource" provides="video">
+    <provides>video</provides>
+  </extension>
+  <extension library="addon.py" point="xbmc.addon.metadata">
+    <summary>Nine Australia catch-up</summary>
+    <description>Channel Nine (Australia) catch-up TV.</description>
+    <provides>video</provides>
+    <platform>all</platform>
+  </extension>
+</addon>
