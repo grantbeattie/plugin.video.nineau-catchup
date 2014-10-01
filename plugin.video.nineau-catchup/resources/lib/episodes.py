@@ -80,7 +80,7 @@ def build_episode_list(slug):
 		listitem.setInfo('video', ep.get_xbmc_videoInfo())
 		listitem.addStreamInfo('video', ep.get_xbmc_videoStreamInfo())
 		listitem.addStreamInfo('audio', ep.get_xbmc_audioStreamInfo())
-		listitem.setArt({ 'fanart': ep.get_fanart() })
+		listitem.setProperty('fanart_image', ep.get_fanart())
 
 		xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=listitem, isFolder=False, totalItems=len(eps))
 

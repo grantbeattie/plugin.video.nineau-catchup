@@ -54,7 +54,7 @@ def build_season_list(slug):
 		listitem = xbmcgui.ListItem(label=season.get_list_title())
 
 		listitem.setInfo('video', season.get_xbmc_videoInfo())
-		listitem.setArt({ 'fanart': season.get_fanart() })
+		listitem.setProperty('fanart_image', season.get_fanart())
 		xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=listitem, isFolder=True, totalItems=season.get_episodeCount())
 
 	xbmcplugin.endOfDirectory(addon_handle)

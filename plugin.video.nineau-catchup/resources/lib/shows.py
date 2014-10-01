@@ -59,7 +59,7 @@ def build_show_list():
 		listitem = xbmcgui.ListItem(label=show.get_list_title(), iconImage=thumbnail_url, thumbnailImage=thumbnail_url)
 
 		listitem.setInfo('video', show.get_xbmc_videoInfo())
-		listitem.setArt({ 'fanart': show.get_fanart() })
+		listitem.setProperty('fanart_image', show.get_fanart())
 		xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=listitem, isFolder=True)
 
 	xbmcplugin.endOfDirectory(addon_handle)
