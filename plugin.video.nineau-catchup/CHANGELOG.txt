@@ -1,7 +1,5 @@
-
-
 - Fix fanart Frodo incompatibility
-
+- Add genre show/episode attribute
 
 1.0
 

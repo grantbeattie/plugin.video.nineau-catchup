@@ -39,6 +39,7 @@ def scrape():
 		new_show.episodeCount = show['episodeCount']
 		new_show.description = show['description']
 		new_show.showImage = show['image']['showImage']
+		new_show.genre = show['genre']
 
 		if new_show.drm is True:
 			continue

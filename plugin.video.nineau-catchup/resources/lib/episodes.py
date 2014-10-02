@@ -41,6 +41,7 @@ def make_ep_obj(ep):
 	new_ep.durationSeconds = ep['durationSeconds']
 	if ep.has_key('classification'): new_ep.rating = ep['classification']
 	new_ep.thumbnail = ep['images']['videoStill']
+	new_ep.genre = ep['genre']
 
 	return new_ep
 

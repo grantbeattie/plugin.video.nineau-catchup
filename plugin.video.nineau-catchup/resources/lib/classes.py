@@ -28,6 +28,7 @@ class Show(object):
 		self.description = None
 		self.episodeCount = None
 		self.showImage = None
+		self.genre = None
 
 	def get_title(self):
 		return self.title
@@ -47,11 +48,15 @@ class Show(object):
 	def get_fanart(self):
 		return self.showImage
 
+	def get_genre(self):
+		return self.genre
+
 	def get_xbmc_videoInfo(self):
 		info = {}
 		if self.get_title():			info['title'] = self.get_title()
 		if self.get_description():		info['plot'] = self.get_description()
 		if self.get_description():		info['plotoutline'] = self.get_description()
+		if self.get_genre():			info['genre'] = self.get_genre()
 
 		return info
 
@@ -101,6 +106,7 @@ class Episode(object):
 		self.rating = None
 		self.durationSeconds = None
 		self.date = None
+		self.genre = None
 
 	def get_title(self):
 		return self.title
@@ -141,6 +147,9 @@ class Episode(object):
 	def get_date(self):
 		if self.date: return time.strftime('%Y-%m-%d', self.date)
 
+	def get_genre(self):
+		return self.genre
+
 	def get_xbmc_videoInfo(self):
 		info = {}
 		if self.get_title():			info['title'] = self.get_title()
@@ -153,6 +162,8 @@ class Episode(object):
 		if self.get_year():				info['year'] = self.get_year()
 		if self.get_durationMinutes():	info['duration'] = self.get_durationMinutes()
 		if self.get_rating():			info['mpaa'] = self.get_rating()
+		if self.get_genre():			info['genre'] = self.get_genre()
+
 		return info
 
 	def get_xbmc_audioStreamInfo(self):
