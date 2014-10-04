@@ -16,4 +16,5 @@ Please include log output using [Github Gist] [gist].
 
 
 [releases]: https://github.com/grantbeattie/xbmc-addon-nineau-catchup/releases
+[issues]: https://github.com/grantbeattie/xbmc-addon-nineau-catchup/issues
 [gist]: https://gist.github.com
