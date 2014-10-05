@@ -57,7 +57,7 @@ def get_stream_url(video_id):
         # This requires gnutls support in ffmpeg, which is only found in XBMC v13
         # but not available at all in iOS or Android builds
         log("Using native HTTPS HLS stream handling...")
-        stream_url = config.stream_url % videoId
+        stream_url = config.stream_url % video_id
 
     else:
         # Use Adam M-W's implementation of handling the HTTPS business within
