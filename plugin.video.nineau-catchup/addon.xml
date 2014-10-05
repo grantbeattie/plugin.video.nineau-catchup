@@ -1,4 +1,4 @@
-<?xml version="1.0" ?><addon id="plugin.video.nineau-catchup" name="NineAU catch-up" provider-name="grantbeattie" version="1.0">
+<?xml version="1.0" ?><addon id="plugin.video.nineau-catchup" name="NineAU catch-up" provider-name="grantbeattie" version="1.1">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>

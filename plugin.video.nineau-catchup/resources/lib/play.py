@@ -18,7 +18,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import classes, episodes, config, utils
+import classes, episodes, utils
 try:
 	import xbmcgui, xbmc
 except ImportError:
@@ -35,5 +35,5 @@ def play_ep(slug):
     listitem.addStreamInfo('audio', ep.get_xbmc_audioStreamInfo())
     listitem.addStreamInfo('video', ep.get_xbmc_videoStreamInfo())
 
-	config.log_msg("Playing stream: %s" % hls_url)
+	utils.log("Playing stream: %s" % hls_url)
     xbmc.Player().play(hls_url, listitem)

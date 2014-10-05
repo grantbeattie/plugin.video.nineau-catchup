@@ -18,7 +18,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import utils, config
+import utils
 import time
 
 class Show(object):
@@ -181,4 +181,5 @@ class Episode(object):
 		return info
 
 	def get_hls_url(self):
-		return config.stream_url % self.videoId
+		return utils.get_stream_url(self.videoId)
+		

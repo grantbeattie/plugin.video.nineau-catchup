@@ -1,5 +1,11 @@
+1.1
+
 - Fix fanart Frodo incompatibility
 - Add genre show/episode attribute
+- Add compatibility mode setting, workaround for lack of SSL HTTP live
+  streaming support in Frodo and Gotham (some platforms)
+  [Implementation from plugin.video.plus7 by Andy Botting]
+
 
 1.0
 
