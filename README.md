@@ -1,5 +1,5 @@
-NineAU catch-up addon for XBMC
-==============================
+NineAU catch-up addon for Kodi/XBMC
+===================================
 
 This addon provides content from the Channel Nine (Australia) catch-up TV service "jump-in".
 
