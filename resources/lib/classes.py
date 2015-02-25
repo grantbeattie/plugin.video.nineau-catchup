@@ -34,7 +34,7 @@ class Show(object):
 		return self.title
 
 	def get_list_title(self):
-		return "%s (%d)" % (self.get_title(), self.get_episodeCount())
+		return self.get_title()
 
 	def get_description(self):
 		return self.description
@@ -73,7 +73,7 @@ class Season(object):
 		return self.title
 
 	def get_list_title(self):
-		return "%s (%d)" % (self.get_title(), self.get_episodeCount())
+		return self.get_title()
 
 	def get_episodeCount(self):
 		return self.episodeCount
