@@ -21,6 +21,6 @@ For issues or bug reports, please file them on the [issues page] [issues].
 Please include log output using [Github Gist] [gist].
 
 
-[releases]: https://github.com/grantbeattie/xbmc-addon-nineau-catchup/releases
-[issues]: https://github.com/grantbeattie/xbmc-addon-nineau-catchup/issues
+[releases]: https://github.com/grantbeattie/plugin.video.nineau-catchup/releases
+[issues]: https://github.com/grantbeattie/plugin.video.nineau-catchup/issues
 [gist]: https://gist.github.com
